@@ -1,34 +1,34 @@
 import java.util.Scanner;
 
+
+
 public class seven {
-    public static void main(String[] args){
-        String str;
+   public static void main(String[] args){
+        Scanner input =new Scanner(System.in);
         System.out.println("Enter the string: ");
-        Scanner input=new Scanner(System.in);
-        str=input.nextLine();
-        int n=str.length();
-        int i,j,k;
-        String str1=str;
-        int m=n;
+        String str=input.nextLine();
+        String str2="";
+        str2+=str;
         for(i=0;i<n;i++){
             for(j=i+1;j<n;j++){
-                if(Character.compare(str1[i],str[j])==0){
+                if(str2[j]==str2[i]){
                     for(k=j;k<n;k++){
-                        str1[k]=str1[k+1];
+                        str2[k]=str2[k+1];
                     }
                     j--;
                     n--;
                 }
             }
         }
-        int ctr=0;
+        int ctr;
         for(i=0;i<n;i++){
+            ctr=0;
             for(j=0;j<m;j++){
-                if(Character.compare(str1[i],str[j])==0){
+                if(Charat(i)==charat(j)){
                     ctr++;
                 }
             }
-            System.out.println(str1[i]+": "+ctr);
+            System.out.println(str[j]+": "+ctr);
         }
         
 
