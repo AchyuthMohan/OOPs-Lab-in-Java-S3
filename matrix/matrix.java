@@ -37,7 +37,7 @@ public class matrix {
             for(j=0;j<m;j++){
                 c[i][j]=0;
                 for(k=0;k<n;k++){
-                    c[i][j]+=a[i][k]*b[j][k];
+                    c[i][j]+=a[i][k]*b[k][j];
                 }
             }
         }
