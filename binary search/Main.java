@@ -34,7 +34,7 @@ class Main {
     System.out.println("Enter the array size: ");
     n=input.nextInt();
     int i;
-    System.out.println("Enter the elements: ");
+    System.out.println("Enter the elements in ascending order: ");
     for(i=0;i<n;i++){
         array[i]=input.nextInt();
     } 
