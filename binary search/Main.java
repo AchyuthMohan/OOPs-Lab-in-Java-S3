@@ -30,7 +30,7 @@ class Main {
     Scanner input = new Scanner(System.in);
 
     int[] array = new int[30];
-    int n;
+    int n,j;
     System.out.println("Enter the array size: ");
     n=input.nextInt();
     int i;
@@ -38,7 +38,15 @@ class Main {
     for(i=0;i<n;i++){
         array[i]=input.nextInt();
     } 
-   
+   for(i=0;i<n;i++){
+       for(j=i+1;j<n;j++){
+           if(array[i]>array[j]){
+               int temp=array[i];
+               array[i]=array[j];
+               array[j]=temp;
+           }
+       }
+   }
     
 
     System.out.println("Enter element to be searched:");
