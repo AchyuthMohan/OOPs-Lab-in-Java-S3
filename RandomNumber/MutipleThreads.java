@@ -1,6 +1,6 @@
 import java.util.Random;
 
- public class RandomNumbers extends Thread{
+class RandomNumbers extends Thread{
     public void run(){
         for(int i=0;i<10;i++){
             Random rd=new Random();
@@ -21,7 +21,7 @@ import java.util.Random;
                 System.out.println(e);
             }
         }
-        }
+       } 
     }
 
 
@@ -44,7 +44,7 @@ class CubeThread extends Thread{
         System.out.println("Cube of "+number+"= "+(number*number*number));
     }
 }
-public class MutipleThreads{
+ class MultipleThreads{
     public  static void main(String args[]) {
         RandomNumbers rn=new RandomNumbers();
         rn.start();
