@@ -1,0 +1,40 @@
+class printer{
+    void print(char ch){
+        for(int i=0;i<10;i++){
+            for(int j=0;j<i;j++){
+                System.out.print(ch);
+            }
+            System.out.println();
+        }
+    }
+}
+class star extends Thread{
+    printer p;
+    star(printer p){
+        this.p=p;
+    }
+    public void run(){
+        p.print('*');
+    }
+
+}
+class hash extends Thread{
+    printer p;
+    hash(printer p){
+        this.p=p;
+
+    }
+    public void run(){
+        p.print('#');
+    }
+}
+
+public class ThreadSync {
+    public static void main(String[] args) {
+        printer p=new printer();
+        star s=new star(p);
+        hash h=new hash(p);
+        s.start();
+        h.start();
+    }
+}
