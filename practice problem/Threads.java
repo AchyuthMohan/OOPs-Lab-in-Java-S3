@@ -1,29 +1,25 @@
-import java.lang.Thread;
 import java.util.Random;
+import java.lang.Thread;
 class thread1 extends Thread{
     public void run(){
         Random rd=new Random();
-        int i=0;
-        while(i<10){
-            int n=rd.nextInt(100);
-         
-            if(n%2==0){
-                thread2 t2=new thread2(n);
+        for(int i=0;i<10;i++){
+            int r=rd.nextInt(100);
+            if(r%2==0){
+                thread2 t2=new thread2(r);
                 t2.start();
             }
-            else if(n%2==1){
-                thread3 t3=new thread3(n);
+            else{
+                thread3 t3=new thread3(r);
                 t3.start();
             }
             try{
-                Thread.sleep(1000);
+                this.sleep(1000);
             }
             catch(Exception e){
                 System.out.println(e);
             }
-            i++;
         }
-       
     }
 }
 class thread2 extends Thread{
@@ -44,9 +40,9 @@ class thread3 extends Thread{
         System.out.println("Cube: "+n*n*n);
     }
 }
-public class Threads {
+public class Threads{
     public static void main(String[] args) {
-        thread1 t=new thread1();
-        t.start();
+        thread1 t1=new thread1();
+        t1.start();
     }
 }
