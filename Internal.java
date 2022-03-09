@@ -43,7 +43,7 @@ class threeD extends TwoD{
 
 
 public class Internal { //Main Class of Java Program
-    public static void main(String[] args) {   //Main Function
+    public static void main() {   //Main Function
         System.out.println("We have 2 points on 2D with (1,2) and (3,4) as values..");
 
         TwoD t1=new TwoD(1, 2); //Object Creation for 2D points

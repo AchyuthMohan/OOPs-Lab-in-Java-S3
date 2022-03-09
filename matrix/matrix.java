@@ -43,9 +43,10 @@ public class matrix {
         }
         for(i=0;i<n;i++){
             for(j=0;j<o;j++){
-                System.out.println(c[i][j]+" ");
+                System.out.print(c[i][j]+" ");
 
             }
+            System.out.println();
         }
 
 
