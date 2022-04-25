@@ -14,5 +14,6 @@ public class stringtokenizer {
             System.out.print(t+" ");
         }
         System.out.println("Sum: "+sum);
+        sc.close();
     }
 }

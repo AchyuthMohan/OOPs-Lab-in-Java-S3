@@ -1,0 +1,2 @@
+calcSalary() in Employee displays “Salary of employee is 10000” and calcSalary() in
+Engineer displays “Salary of employee is 20000.”
