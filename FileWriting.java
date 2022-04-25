@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class FileWriting {
     public static void main(String[] args) {
-        String path="output.txt";
+        // String path="output.txt";
         Scanner sc=new Scanner(System.in);
         FileOutputStream fout=null;
         try{
-            fout=new FileOutputStream(path);
+            fout=new FileOutputStream("outputs.txt");
             System.out.println("Enter the contents: ");
             String data=new String();
             data=sc.nextLine();
