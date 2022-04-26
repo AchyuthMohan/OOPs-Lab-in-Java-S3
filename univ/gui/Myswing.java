@@ -39,12 +39,12 @@ class Frame extends JFrame implements ActionListener{
         if(s=="REVERSE"){
             String s1=t1.getText();
             System.out.println(s1);
-            // String s2="";
-            // for(int i=s1.length()-1;i>=0;i--){
-            //     s2+=s1.charAt(i);
-            // }
-            // t2.setText(s2);
-            // System.out.println(s2);
+            String s2="";
+            for(int i=s1.length()-1;i>=0;i--){
+                s2+=s1.charAt(i);
+            }
+            t2.setText(s2);
+            System.out.println(s2);
         }
     }
 
