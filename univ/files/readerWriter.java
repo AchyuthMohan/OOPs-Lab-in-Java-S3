@@ -6,7 +6,7 @@ class readerWriter{
             fis=new FileReader("abc.txt");
             int ch;
             while((ch=fis.read())!=-1){
-                System.out.print((char)ch);
+                System.out.print(ch);
             }
         }
         catch(Exception e){
