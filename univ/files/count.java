@@ -5,7 +5,7 @@ public class count {
         try{
             fis=new FileInputStream("abc.txt");
             int ch;
-            int word=1,c=0,nl=0;
+            int word=1,c=0,nl=1;
             String s=new String();
             while((ch=fis.read())!=-1){
                 char v=(char)ch;
