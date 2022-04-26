@@ -7,6 +7,12 @@ import java.sql.*;
 import java.lang.*;
 
 public class cgpa {
+
+
+    // mysql -u root -p
+    //  CREATE DATABASE `samplebd`;
+    // SHOW DATABASES;
+    // CREATE TABLE `users`(`username`  VARCHAR(45),`email` VARCHAR(45),`password` VARCHAR(45));
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the no of students: ");
